@@ -1,0 +1,53 @@
+.pagina {
+  display: grid;
+  gap: 28px;
+}
+
+.encabezado {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.encabezado h1 {
+  font-size: clamp(2rem, 6vw, 2.8rem);
+}
+
+.encabezado p {
+  margin: 0;
+}
+
+.cuentas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.cuenta {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 8px;
+}
+
+.cuenta p {
+  margin: 0 0 12px;
+}
+
+.extras {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.enlace {
+  border: 0;
+  background: none;
+  color: var(--color-accent);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
